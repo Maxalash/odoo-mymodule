@@ -5,9 +5,11 @@
             <field name="name">Programming Fundamentals</field>
             <field name="description">Course teaches fundamentals of programming in C++.
     </field>
+            <field name="state">on_going</field>
         </record>
         <record model="openacademy.course" id="course1">
             <field name="name">Object Oriented Programming</field>
+            <field name="state">on_going</field>
         </record>
         <record model="openacademy.course" id="course2">
             <field name="name">Algorithms and Data Structures</field>
@@ -17,19 +19,24 @@ searching algorithms,
 storing algorithms,
 design patterns.
     </field>
+            <field name="state">on_going</field>
         </record>
 
         <record model="openacademy.instructor" id="instructor0">
             <field name="name">Paul Walker</field>
             <field name="age">25</field>
+            <field name="gender">male</field>
         </record>
         <record model="openacademy.instructor" id="instructor0">
             <field name="name">Johny Depp</field>
             <field name="age">34</field>
+            <field name="gender">male</field>
+            <field name="note">Yeah, Iam good teacher ;)</field>
         </record>
         <record model="openacademy.instructor" id="instructor0">
             <field name="name">Adam Sendler</field>
             <field name="age">27</field>
+            <field name="gender">male</field>
         </record>
 
     </data>
