@@ -1,19 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <record model="openacademy.course" id="course0">
-    <field name="name">Programming Fundamentals</field>
-    <field name="description">Course teaches fundamentals of programming in C++.
+    <data noupdate="1">
+        <record model="openacademy.course" id="course0">
+            <field name="name">Programming Fundamentals</field>
+            <field name="description">Course teaches fundamentals of programming in C++.
     </field>
-</record>
-<record model="openacademy.course" id="course1">
-    <field name="name">Object Oriented Programming</field>
-</record>
-<record model="openacademy.course" id="course2">
-    <field name="name">Algorithms and Data Structures</field>
-    <field name="description">
-      Big O notation, 
-      searching algorithms, 
-      storing algorithms,
-      design patterns.
+        </record>
+        <record model="openacademy.course" id="course1">
+            <field name="name">Object Oriented Programming</field>
+        </record>
+        <record model="openacademy.course" id="course2">
+            <field name="name">Algorithms and Data Structures</field>
+            <field name="description">
+Big O notation, 
+searching algorithms, 
+storing algorithms,
+design patterns.
     </field>
-</record>
+        </record>
+
+        <record model="openacademy.instructor" id="instructor0">
+            <field name="name">Paul Walker</field>
+            <field name="age">25</field>
+        </record>
+        <record model="openacademy.instructor" id="instructor0">
+            <field name="name">Johny Depp</field>
+            <field name="age">34</field>
+        </record>
+        <record model="openacademy.instructor" id="instructor0">
+            <field name="name">Adam Sendler</field>
+            <field name="age">27</field>
+        </record>
+
+    </data>
 </odoo>
