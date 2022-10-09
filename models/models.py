@@ -2,15 +2,18 @@
 
 from odoo import models, fields, api
 
-
 class Course(models.Model):
     _name = 'openacademy.course'
     _description = 'Open Academy Course'
 
     name = fields.Char(string ='title', required=True)
     description = fields.Text()
+    state = fields.Selection([
+      ('on_going', 'On going'),
+      ('stopped', 'Stopped')
+    ], required=True, default='stopped')
     instructor_id = fields.Many2one('openacademy.instructor', 
-        string="Instructor", required = True)
+        string="Instructor")
 
 
 class Instructor(models.Model):
@@ -25,3 +28,7 @@ class Instructor(models.Model):
         ('other', 'other'),
     ], required=True, default='male')
     note = fields.Text(string='Description')
+    image = fields.Binary(string="Image")
+
+
+
