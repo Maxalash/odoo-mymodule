@@ -5,6 +5,7 @@ from odoo import models, fields, api
 class Course(models.Model):
     _name = 'openacademy.course'
     _description = 'Open Academy Course'
+    _inherit= 'openacademy.instructor'
 
     name = fields.Char(string ='title', required=True)
     description = fields.Text()
@@ -16,19 +17,6 @@ class Course(models.Model):
         string="Instructor")
 
 
-class Instructor(models.Model):
-    _name = 'openacademy.instructor'
-    _description = 'Open Academy instructor'
-
-    name = fields.Char(string='Name', required=True)
-    age = fields.Integer(string='Age')
-    gender = fields.Selection([
-        ('male', 'Male'),
-        ('female', 'Female'),
-        ('other', 'other'),
-    ], required=True, default='male')
-    note = fields.Text(string='Description')
-    image = fields.Binary(string="Image")
 
 
 
